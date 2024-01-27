@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather-app</title>
+    <!-- for logo search -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="container">
+        <my-brand></my-brand>
+        <div>
+          <h1 class="temp">waiting...&#176;</h1>
+          <div class="city-time">
+            <h1 class="name">waiting...</h1>
+            <small>
+              <span class="time">waiting...</span>
+              <span class="date">waiting...</span>
+            </small>
+          </div>
+          <div class="weather">
+            <img
+              src="./src/icons/day/113.png"
+              alt="icon"
+              class="icon"
+              width="50"
+              height="50"
+            />
+            <span class="condition">waiting...</span>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <form action="" id="locationInput">
+          <input
+            type="text"
+            required
+            name=""
+            id=""
+            class="search"
+            placeholder="Looking for other cities and locations? search here!"
+          />
+          <button type="submit" class="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <ul class="cities">
+          <h2>City</h2>
+          <li class="city">Jakarta</li>
+          <li class="city">Makassar</li>
+          <li class="city">New York</li>
+          <li class="city">Los Angeles</li>
+        </ul>
+        <ul class="details">
+          <h2>Weather Details</h2>
+          <li>
+            <span>Cloudy</span>
+            <span class="cloud">loading...</span>
+          </li>
+
+          <li>
+            <span>Humidity</span>
+            <span class="humidity">loading...</span>
+          </li>
+
+          <li>
+            <span>wind</span>
+            <span class="wind">loading...</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./dist/bundle.js "></script>
+  </body>
+</html>
